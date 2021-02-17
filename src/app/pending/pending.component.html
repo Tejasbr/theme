@@ -1,0 +1,61 @@
+<div class="container">
+    <table class="table">
+        <thead class="thead-dark">
+          <tr id="font1">
+            <th scope="col">Scan BarCode</th>
+            <th scope="col">Medicine Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Net Amount</th>
+            <th scope="col">Bag Number</th>
+            <th scope="col">Bag-Wise Qty.</th>
+      
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of tableData;  let i = index" class="wow fadeInDown" data-wow-duration="3s" id="font">
+            <th scope="row"><input type="checkbox"></th>
+            <td>{{data.MediName}}</td>
+            <td>{{data.Price}}</td>
+            <td>{{data.Quantity}}</td>
+            <td>{{data.NetAmount}}</td>
+            <td><input type="text" placeholder="enter Bag No."></td>
+            <td><input type="text" placeholder="enter Quantity"></td>
+            <td> <span class="input-group-btn">
+              <button type="button" class="btn btn-success btn-number sty" data-type="plus" data-field="quant[2]" (click)="addItem1(i)">
+                  <span class="glyphicon glyphicon-plus"></span>
+              </button>
+          </span></td>
+            <td> 
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-danger btn-number sty"  data-type="minus" data-field="quant[2]" (click)="addItem(i)">
+                  <span class="glyphicon glyphicon-minus"></span>
+                </button>
+            </span>
+         </td>
+          </tr>
+      
+        </tbody>
+        
+      </table>
+      <div class=" col-lg-6 col-md-6  col-sm-6 col-xs-12 data-col3">
+        <label for="example-date-input" class=" col-form-label" >Total Amount</label>
+        <textarea></textarea>
+    </div>
+</div>
+<div class="text-center dsg">
+<button type="button" class="btn btn-success pos1">Accept Order</button>
+<button type="button" class="btn btn-danger pos1">Reject Order</button>
+</div>
+<div class="form-group row">
+<div class=" col-lg-6 col-md-6  col-sm-6 col-xs-12 data-col4"  >
+    <label for="example-number-input" class=" col-form-label" >No. of Bags*</label>
+     <input type="text" placeholder="display No. of Bags">
+</div>
+
+   <div class=" col-lg-6 col-md-6  col-sm-6 col-xs-12 data-col4">
+      <label for="example-date-input" class=" col-form-label" >Enter Reason for Rejection*</label>
+      <input type="text" placeholder="enter Reason here">
+  </div>
+
+</div>

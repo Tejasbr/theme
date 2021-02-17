@@ -1,0 +1,126 @@
+
+
+.pos{
+    display: flex;
+    margin-left: 85%;   
+ }
+ 
+ #font{
+    color: antiquewhite;
+    font-family: cursive;
+     font-weight: bold;
+ }
+ #font1{
+   
+    font-family: cursive;
+     font-weight: bold;
+ }
+ .table{
+    margin-top:26px;
+   
+ }
+ 
+ #style1{
+    margin-top: 62px;
+    padding: 10px;
+ }
+ .sty1{
+   margin: 90px;
+   width: 209px;
+ }
+ #style2{
+    margin-top: 290px;
+ }
+ .poss{
+    margin-top: 250px;
+ }
+ .data-col1
+ {
+    display:flex;
+    align-items: center;
+ }
+ .data-col1 textarea
+ {
+    width:55%;
+     height: 35px;
+     text-align: center;
+     padding: 7px;
+     font-weight: bold;
+ }
+ .data-col1 label
+ {
+    border:1px solid white;
+    height: 35px;
+    width: 150px;
+    text-align: center;
+  
+   
+ }
+ 
+ .data-col2
+ {
+    display:flex;
+    align-items: center;
+ }
+ .data-col2 textarea
+ {
+    width:55%;
+     height: 35px;
+     text-align: center;
+     
+     padding: 7px;
+     font-weight: bold;
+ }
+ .data-col2 label
+ {
+    border:1px solid white;
+    height: 35px;
+    width: 150px;
+    text-align: center;
+    
+ }
+ .glyphicon-plus:before {
+    content: "\2b";
+ }
+ .glyphicon-minus:before {
+    content: "\2212";
+ }
+ .sty{
+    border-radius: 20px;
+ }
+ .data-col3
+ {
+    display:flex;
+    align-items: center;
+    margin-left: 250px;
+ }
+ .data-col3 label{
+    border:1px solid white;
+    height: 35px;
+    width: 150px;
+    text-align: center;
+ }
+ .data-col3 textarea{
+    width:16%;
+    height: 35px;
+    text-align: center;
+    
+    padding: 7px;
+    font-weight: bold;
+    }
+ 
+ .pos1{
+    margin: 18px;
+    width: 10%;
+    padding: 2px;
+ }
+ 
+ .data-col4 label{
+    border:1px solid white;
+    height: 35px;
+    width: 201px;
+    text-align: center;
+ }
+ .data-col4 input{
+   height: 5%;
+ }

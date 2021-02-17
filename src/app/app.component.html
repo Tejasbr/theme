@@ -1,0 +1,9 @@
+<div *ngIf="!isHide">
+<button type="button" class="btn btn-primary" routerLink="pending" (click) = "show()">Asign Pending Orders</button>
+<button type="button" class="btn btn-secondary" routerLink="rejected" (click) = "show()">View Rejected Orders</button>
+<button type="button" class="btn btn-success" routerLink="accepted" (click) = "show()">View Accepted Orders</button>
+<button type="button" class="btn btn-success" routerLink="transist" (click) = "show()">Orders in Transist</button>
+</div>
+<div *ngIf="isHide">
+<router-outlet></router-outlet>
+</div>

@@ -1,0 +1,27 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr id="font1">
+        <th scope="col">srNo</th>
+        <th scope="col">patientNHSNo</th>
+        <th scope="col">patientName</th>
+        <th scope="col">location</th>
+        <th scope="col">orderNo</th>
+        <th scope="col">netAmount</th>
+        <th scope="col">Action</th>
+  
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of tableData" class="wow fadeInDown" data-wow-duration="3s" id="font">
+        <th scope="row" >{{data.srNo}}</th>
+        <td (click)="getStatus()">{{data.petientNHSNo}}</td>
+        <td>{{data.patientName}}</td>
+        <td>{{data.location}}</td>
+        <td>{{data.orderNo}}</td>
+        <td>{{data.orderAmt}}</td>
+        <td><input class="form-check-input" type="radio" name="gob" [value]="data.orderNo"/></td>
+         
+      </tr>
+  
+    </tbody>
+  </table>
